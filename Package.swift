@@ -12,7 +12,8 @@ let package = Package(
                 "AuthMeSPM",
                 "AuthMe",
                 "AuthMeUI",
-                "onnxruntime"
+                "onnxruntime",
+                "OpenSSL"
             ]),
     ],
     dependencies: [
@@ -37,6 +38,11 @@ let package = Package(
             name: "onnxruntime",
             url: "https://storage.googleapis.com/authme-mobile.appspot.com/iOS/2.2.2/onnxruntime.xcframework.zip",
             checksum: "c3ec0a200062bf8e388a94b5200561812731425580ac83529e218016a9e1af5a"
+        ),
+        .binaryTarget(
+            name: "OpenSSL",
+            url: "https://storage.googleapis.com/authme-mobile.appspot.com/iOS/2.2.2/OpenSSL.xcframework.zip",
+            checksum: "cf1d5849465b111c8db4e1c432b096e8051c3cf018b673c9a3422715fa8abb71"
         ),
     ]
 )
