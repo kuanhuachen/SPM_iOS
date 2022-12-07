@@ -10,7 +10,8 @@ let package = Package(
             name: "AuthMeSPM",
             targets: [
                 "AuthMeSPM",
-                "AuthMe"
+                "AuthMe",
+                "AuthMeUI"
             ]),
     ],
     dependencies: [
@@ -25,6 +26,11 @@ let package = Package(
             name: "AuthMe",
             url: "https://storage.googleapis.com/authme-mobile.appspot.com/iOS/2.2.2/AuthMe.xcframework.zip",
             checksum: "f30fcad3240793f6c6c809f0fc24e578c0daeaa804fae92335cda434ead0a068"
+        ),
+        .binaryTarget(
+            name: "AuthMeUI",
+            url: "https://storage.googleapis.com/authme-mobile.appspot.com/iOS/2.2.2/AuthMeUI.xcframework.zip",
+            checksum: "31ff162be6496bca6664c442047cabb2d2907a4207dc9f315c24c567332aa356"
         ),
     ]
 )
