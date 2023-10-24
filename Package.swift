@@ -11,9 +11,10 @@ let package = Package(
             targets: [
                 "AuthMeSPM",
                 "AuthMe",
-                "AuthMeUI",
-                "onnxruntime",
-                "OpenSSL"
+                "AuthMeUI"
+// ,
+//                 "onnxruntime",
+//                 "OpenSSL"
             ]),
     ],
     dependencies: [
@@ -34,15 +35,15 @@ let package = Package(
             url: "https://storage.googleapis.com/authme-mobile.appspot.com/iOS/2.4.6/AuthMeUI.xcframework.zip",
             checksum: "ff95c28e9e893568efb3cba6d6cfef11df961c5633b93e131416496e8057438f"
         ),
-        .binaryTarget(
-            name: "onnxruntime",
-            url: "https://storage.googleapis.com/authme-mobile.appspot.com/iOS/2.4.6/onnxruntime.xcframework.zip",
-            checksum: "c3ec0a200062bf8e388a94b5200561812731425580ac83529e218016a9e1af5a"
-        ),
-        .binaryTarget(
-            name: "OpenSSL",
-            url: "https://storage.googleapis.com/authme-mobile.appspot.com/iOS/2.4.6/OpenSSL.xcframework.zip",
-            checksum: "cf1d5849465b111c8db4e1c432b096e8051c3cf018b673c9a3422715fa8abb71"
-        ),
+        // .binaryTarget(
+        //     name: "onnxruntime",
+        //     url: "https://storage.googleapis.com/authme-mobile.appspot.com/iOS/2.4.6/onnxruntime.xcframework.zip",
+        //     checksum: "c3ec0a200062bf8e388a94b5200561812731425580ac83529e218016a9e1af5a"
+        // ),
+        // .binaryTarget(
+        //     name: "OpenSSL",
+        //     url: "https://storage.googleapis.com/authme-mobile.appspot.com/iOS/2.4.6/OpenSSL.xcframework.zip",
+        //     checksum: "cf1d5849465b111c8db4e1c432b096e8051c3cf018b673c9a3422715fa8abb71"
+        // ),
     ]
 )
