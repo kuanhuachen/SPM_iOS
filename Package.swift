@@ -18,7 +18,7 @@ let package = Package(
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
-     .package(url: "https://github.com/airbnb/lottie-ios", from: 4.3.3),
+     .package(url: "https://github.com/airbnb/lottie-ios", from: "4.3.3"),
   ],
   targets: [
     .target(
