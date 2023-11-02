@@ -18,12 +18,12 @@ let package = Package(
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
-    .package(url: "https://github.com/airbnb/lottie-spm.git", from: "4.3.3")
+    .package(url: "https://github.com/airbnb/lottie-spm.git", from: "4.3.3"),
   ],
   targets: [
     .target(
       name: "AuthMeSPM",
-      dependencies: [.product(name: "Lottie", package: "Lottie")]
+      dependencies: [.productItem(name: "Lottie", package: "lottie-spm")]
     ),
     .binaryTarget(
       name: "AuthMe",
@@ -44,6 +44,6 @@ let package = Package(
       name: "OpenSSL",
       url: "https://storage.googleapis.com/authme-mobile.appspot.com/iOS/2.4.6/OpenSSL.xcframework.zip",
       checksum: "402ddb53a920d584f41ed402d2f032f9df12f04997e5633eb8bd944c16344a0d"
-    ),
+    )
   ]
 )
