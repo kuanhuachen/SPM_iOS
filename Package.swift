@@ -23,7 +23,7 @@ let package = Package(
   targets: [
     .target(
       name: "AuthMeSPM",
-      dependencies: []
+      dependencies: [.product(name: "Lottie", package: "Lottie")]
     ),
     .binaryTarget(
       name: "AuthMe",
